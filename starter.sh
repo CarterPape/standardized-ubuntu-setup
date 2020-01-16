@@ -9,4 +9,5 @@ cd setupdir
 git clone https://github.com/CarterPape/standardized-ubuntu-setup.git
 cd standardized-ubuntu-setup
 
+sudo chmod +x ./doCustomSetup.sh
 . ./doCustomSetup.sh
