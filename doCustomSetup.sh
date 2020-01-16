@@ -9,5 +9,8 @@ sudo apt autoremove
 sudo chmod +x ./nano/setup.sh
 sudo chmod +x ./zsh/setup.sh
 
-. ./nano/setup.sh
-. ./zsh/setup.sh
+cd nano
+. ./setup.sh
+
+cd ../zsh
+. ./setup.sh
