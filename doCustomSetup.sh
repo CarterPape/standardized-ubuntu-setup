@@ -6,8 +6,8 @@ sudo apt update
 sudo apt full-upgrade
 sudo apt autoremove
 
-cd nano
+cd ../zsh
 . ./setup.sh
 
-cd ../zsh
+cd nano
 . ./setup.sh
