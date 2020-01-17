@@ -12,4 +12,6 @@ cd ../zsh
 cd nano
 . ./setup.sh
 
+read -p "All done. Press [Enter] to reboot."
+
 sudo reboot
