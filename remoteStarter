@@ -4,6 +4,7 @@
 # /bin/bash <(curl -s https://raw.githubusercontent.com/CarterPape/standardized-ubuntu-setup/master/remoteStarter)
 
 setupdir=`mktemp -d 2>/dev/null || mktemp -d -t 'ubuntu-setup-tmp'`
+echo "working from $setupdir"
 cd $setupdir
 
 git clone https://github.com/CarterPape/standardized-ubuntu-setup.git
