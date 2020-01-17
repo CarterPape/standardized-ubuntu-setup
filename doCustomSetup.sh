@@ -11,3 +11,5 @@ cd ../zsh
 
 cd nano
 . ./setup.sh
+
+sudo reboot
