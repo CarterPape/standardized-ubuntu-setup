@@ -6,10 +6,10 @@ sudo apt update
 sudo apt full-upgrade
 sudo apt autoremove
 
-cd ../zsh
+cd zsh
 . ./setup.sh
 
-cd nano
+cd ../nano
 . ./setup.sh
 
 read -p "All done. Press [Enter] to reboot."
