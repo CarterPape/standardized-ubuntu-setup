@@ -3,7 +3,8 @@
 sudo apt install make
 sudo apt install clang
 sudo apt install gcc
-sudo apt install libncurses5-dev libncursesw5-dev
+sudo apt install libncurses5-dev
+sudo apt install libncursesw5-dev
 sudo apt install groff
 sudo apt install pkg-config
 
@@ -19,12 +20,10 @@ sudo make install
 
 # shell game
 
+cd ..
+
 sudo mv /etc/nanorc /etc/nanorc.old
+sudo ln -s /usr/local/etc/nanorc /etc/nanorc
 
 cp -r ./for-home./. ~/
 sudo cp -r ./for-.usr.local.etc./. /usr/local/etc/
-
-sudo mv /bin/nano /bin/nano.old
-sudo ln -s /usr/local/bin/nano /bin/nano
-
-sudo ln -s /usr/local/etc/nanorc /etc/nanorc
