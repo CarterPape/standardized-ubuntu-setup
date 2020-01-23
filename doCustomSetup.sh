@@ -1,5 +1,13 @@
 #!/bin/bash
 
+echo "What would you like to be the hostname of this machine?"
+
+read newhostname
+
+sudo hostnamectl set-hostname newhostname
+
+echo "Wetting timezone do America/Denver"
+
 sudo timedatectl set-timezone America/Denver
 
 sudo apt update -y
