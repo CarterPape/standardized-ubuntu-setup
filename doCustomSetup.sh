@@ -2,9 +2,9 @@
 
 sudo timedatectl set-timezone America/Denver
 
-sudo apt update
-sudo apt full-upgrade
-sudo apt autoremove
+sudo apt update -y
+sudo apt full-upgrade -y
+sudo apt autoremove -y
 
 cd zsh
 . ./setup.sh
