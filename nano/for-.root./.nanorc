@@ -1,0 +1,7 @@
+## This is a user-specific settings file. It is loaded after the systemwide settings file, which is located at `/etc/nano`.
+
+set titlecolor      brightwhite,red
+set statuscolor     brightwhite,red
+set numbercolor     white,red
+set keycolor        white,red
+set functioncolor   white,red

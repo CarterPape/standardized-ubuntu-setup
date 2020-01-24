@@ -21,3 +21,4 @@ sudo ln -s /usr/local/etc/nanorc /etc/nanorc
 
 cp -r ./for-home./. ~/
 sudo cp -r ./for-.usr.local.etc./. /usr/local/etc/
+sudo cp -r ./for-.root./. /root/
