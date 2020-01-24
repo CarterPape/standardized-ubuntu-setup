@@ -6,9 +6,9 @@ sudo hostnamectl set-hostname $newhostname
 echo "Setting timezone do America/Denver"
 sudo timedatectl set-timezone America/Denver
 
-sudo apt update -y
-sudo apt full-upgrade -y
-sudo apt autoremove -y
+sudo apt update -yq
+sudo apt full-upgrade -yq
+sudo apt autoremove -yq
 
 cd zsh
 . ./setup.sh

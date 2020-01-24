@@ -1,12 +1,6 @@
 # prerequisites
 
-sudo apt install make -y
-sudo apt install clang -y
-sudo apt install gcc -y
-sudo apt install libncurses5-dev -y
-sudo apt install libncursesw5-dev -y
-sudo apt install groff -y
-sudo apt install pkg-config -y
+sudo apt install clang make gcc libncurses5-dev libncursesw5-dev groff pkg-config -yq
 
 # nano
 
