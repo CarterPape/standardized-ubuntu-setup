@@ -1,0 +1,4 @@
+# See man 5 aliases for format
+ubuntu:         sysadmin
+root:           sysadmin
+postmaster:     sysadmin

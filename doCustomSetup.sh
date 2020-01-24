@@ -1,7 +1,10 @@
-#!/bin/bash
+#!/bin/sh
 
 while read -r -t 0; do read -r; done
 read -p "What would you like to be the hostname of this machine? " newhostname
+
+echo "Setting hostname to $newhostname"
+sudo hostnamectl set-hostname $newhostname
 
 echo "Setting timezone do America/Denver"
 sudo timedatectl set-timezone America/Denver
@@ -18,8 +21,8 @@ cd zsh
 cd ../nano
 . ./setup.sh
 
-echo "Setting hostname to $newhostname"
-sudo hostnamectl set-hostname $newhostname
+cd ../mailing
+. ./setup.sh
 
 read -p "All done. Press [Enter] to reboot."
 sudo reboot
