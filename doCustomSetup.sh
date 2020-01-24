@@ -6,7 +6,7 @@ echo "Setting timezone do America/Denver"
 sudo timedatectl set-timezone America/Denver
 
 sudo apt update -yq
-sudo apt -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" install openssh_server
+sudo apt -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" install openssh_server -yq
 sudo apt full-upgrade -yq
 sudo apt autoremove -yq
 

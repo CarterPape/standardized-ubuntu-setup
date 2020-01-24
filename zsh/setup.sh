@@ -1,4 +1,4 @@
-sudo apt install zsh -yq
+sudo apt install zsh zsh-doc -yq
 
 sudo mv /etc/zsh/zshrc /etc/zsh/zshrc.old
 sudo mv /etc/zsh/newuser.zshrc.recommended /etc/zsh/newuser.zshrc.recommended.old
