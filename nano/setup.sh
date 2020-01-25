@@ -1,3 +1,4 @@
+#!zsh
 # prerequisites
 
 sudo apt install clang make gcc libncurses5-dev libncursesw5-dev groff pkg-config -yq

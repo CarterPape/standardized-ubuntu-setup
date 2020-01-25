@@ -1,3 +1,4 @@
+#!zsh
 # helpful links:
 # https://www.digitalocean.com/community/tutorials/how-to-set-up-a-mail-relay-with-postfix-and-mailgun-on-ubuntu-16-04
 # https://marcelog.github.io/articles/configure_postfix_forward_all_email_smtp_gateway.html

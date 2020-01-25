@@ -20,14 +20,17 @@ sudo apt -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confol
 sudo apt full-upgrade -yq
 sudo apt autoremove -yq
 
-cd mailing
-. ./setup.sh
-
 cd ../zsh
 . ./setup.sh
 
 cd ../nano
-. ./setup.sh
+zsh ./setup.sh
+
+cd mailing
+zsh ./setup.sh
+
+cd ../pip
+zsh ./setup.sh
 
 read -p "All done. Press [Enter] to reboot."
 sudo reboot
