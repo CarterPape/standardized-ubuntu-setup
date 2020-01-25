@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Usage:
 # /bin/bash <(curl -s https://raw.githubusercontent.com/CarterPape/standardized-ubuntu-setup/master/remoteStarter)
@@ -9,5 +9,7 @@ cd $setupdir
 
 git clone https://github.com/CarterPape/standardized-ubuntu-setup.git
 cd standardized-ubuntu-setup
+git log -2
+read -p "The topmost commit will be used. Press [Enter] to continue. "
 
 . ./doCustomSetup.sh
