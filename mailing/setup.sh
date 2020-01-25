@@ -1,4 +1,6 @@
-# helpful: https://www.digitalocean.com/community/tutorials/how-to-set-up-a-mail-relay-with-postfix-and-mailgun-on-ubuntu-16-04
+# helpful links:
+# https://www.digitalocean.com/community/tutorials/how-to-set-up-a-mail-relay-with-postfix-and-mailgun-on-ubuntu-16-04
+# https://marcelog.github.io/articles/configure_postfix_forward_all_email_smtp_gateway.html
 
 sudo debconf-set-selections <<< "postfix postfix/main_mailer_type   select Satellite system"
 sudo debconf-set-selections <<< "postfix postfix/mailname           string $(hostname)"
@@ -38,4 +40,4 @@ sudo apt -y install mailutils
 
 # notify of setup success
 mail $sysadmin_address -s "Mail setup successful" <<< \
-    "Setting up mail functionality on the machine at <pre>$(hostname)</pre> was successful."
+    "Setting up mail functionality on the machine at $(hostname) was successful."
