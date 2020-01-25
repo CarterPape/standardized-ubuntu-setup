@@ -8,8 +8,10 @@ sudo debconf-set-selections <<< "postfix postfix/mailname           string $(hos
 sudo debconf-set-selections <<< "postfix postfix/relayhost          string smtp.mailgun.org"
 sudo apt -y install postfix
 
-read -p "SMTP domain for Mailgun: "                 smtp_domain
-read -p "SMTP user (without domain) for Mailgun: "  smtp_user
+printf "SMTP domain for Mailgun: "
+read smtp_domain
+printf "SMTP user (without domain) for Mailgun: "
+read smtp_user
 stty -echo
 printf "Password for Mailgun SMTP user $smtp_user@$smtp_domain: "
 read smtp_password
