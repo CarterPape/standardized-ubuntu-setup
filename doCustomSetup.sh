@@ -12,16 +12,21 @@ sudo timedatectl set-timezone America/Denver
 export DEBIAN_FRONTEND=noninteractive
 sudo apt update -yq
 sudo apt -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" install openssh-server -yq
+
+#"openssh-server" <<< "new config: keep local"
+#"libssl1.1:amd64" <<< "restart services: yes"
+#"ubuntu-server" <<< "new config: package maintainer's"
+
 sudo apt full-upgrade -yq
 sudo apt autoremove -yq
 
-cd zsh
+cd mailing
+. ./setup.sh
+
+cd ../zsh
 . ./setup.sh
 
 cd ../nano
-. ./setup.sh
-
-cd ../mailing
 . ./setup.sh
 
 read -p "All done. Press [Enter] to reboot."

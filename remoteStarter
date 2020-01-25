@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # Usage:
 # /bin/bash <(curl -s https://raw.githubusercontent.com/CarterPape/standardized-ubuntu-setup/master/remoteStarter)
