@@ -21,7 +21,8 @@ stty echo
 sudo chmod 600 /etc/postfix/sasl_passwd
 sudo postmap /etc/postfix/sasl_passwd
 
-read -p "System mail sender address: " sender_address
+echo "System mail sender address: "
+read sender_address
 
 cat ./postfix-conf-appendage.conf                   | sudo tee -a /etc/postfix/main.cf
 echo "$USER@$(hostname)         $sender_address"    | sudo tee -a /etc/postfix/generic
@@ -33,7 +34,8 @@ sudo postmap hash:/etc/postfix/generic
 sudo postmap hash:/etc/postfix/transport
 sudo systemctl restart postfix
 
-read -p "System administrator (recipient) address: " sysadmin_address
+echo "System mail recipient address: "
+read sysadmin_address
 
 cat ./aliases                       | sudo tee /etc/aliases
 echo "sysadmin: $sysadmin_address"  | sudo tee -a /etc/aliases
