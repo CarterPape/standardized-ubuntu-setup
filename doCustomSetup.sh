@@ -26,8 +26,8 @@ cd zsh
 cd ../nano
 zsh ./setup.sh
 
-cd ../mailing
-zsh ./setup.sh
+# cd ../mailing
+# zsh ./setup.sh
 
 cd ../pip
 zsh ./setup.sh
