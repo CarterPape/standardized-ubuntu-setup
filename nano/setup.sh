@@ -5,10 +5,10 @@ sudo apt install clang make gcc libncurses5-dev libncursesw5-dev groff pkg-confi
 
 # nano
 
-curl -O https://www.nano-editor.org/dist/v4/nano-4.9.2.tar.gz
-tar -xvf nano-4.9.2.tar.gz
+curl -O https://www.nano-editor.org/dist/v6/nano-6.4.tar.gz
+tar -xvf nano-6.4.tar.gz
 
-cd nano-4.9.2
+cd nano-6.4
 ./configure
 make
 sudo make install
